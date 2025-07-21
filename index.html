@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marcos Herrera Vegas | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --vandy-gold: #CFAE70;
+      --vandy-black: #000000;
+      --light-gray: #f9f9f9;
+      --card-shadow: rgba(0, 0, 0, 0.1);
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      background: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #222;
+    }
+    header, nav, main, footer {
+      max-width: 1150px;
+      margin: auto;
+      padding: 1.5em;
+    }
+    header {
+      text-align: center;
+      background: var(--light-gray);
+      border-bottom: 3px solid var(--vandy-gold);
+      padding-bottom: 2em;
+      animation: fadeInDown 1s ease-out;
+    }
+    h1 {
+      color: var(--vandy-black);
+      font-size: 2.8em;
+      margin-bottom: 0.2em;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 0.4em;
+      color: var(--vandy-gold);
+      border-left: 5px solid var(--vandy-gold);
+      padding-left: 12px;
+      animation: fadeInLeft 0.6s ease;
+    }
+    nav {
+      background: white;
+      border-bottom: 2px solid var(--vandy-gold);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--vandy-black);
+      font-weight: bold;
+      font-size: 1.05em;
+      padding: 10px 14px;
+      transition: background 0.3s, color 0.3s, transform 0.2s;
+    }
+    nav a:hover {
+      background: var(--vandy-gold);
+      color: black;
+      border-radius: 4px;
+      transform: scale(1.05);
+    }
+    section {
+      margin-bottom: 3em;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .card {
+      background: var(--light-gray);
+      border-left: 4px solid var(--vandy-gold);
+      box-shadow: 0 2px 8px var(--card-shadow);
+      padding: 1.5em;
+      margin: 1.2em 0;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    ul {
+      padding-left: 1.5em;
+    }
+    .btn {
+      background: var(--vandy-black);
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      display: inline-block;
+      font-size: 1em;
+      transition: background 0.3s;
+      margin: 1em 0;
+    }
+    .btn:hover {
+      background: var(--vandy-gold);
+      color: black;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.95em;
+      color: #444;
+      background: var(--light-gray);
+      border-top: 1px solid #ccc;
+      padding: 2em 1em;
+    }
+    .social {
+      margin-top: 1em;
+    }
+    .social a {
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.5em;
+      color: var(--vandy-black);
+      transition: color 0.3s ease;
+    }
+    .social a:hover {
+      color: var(--vandy-gold);
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 2em; }
+      h2 { font-size: 1.5em; }
+      .nav-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Marcos Herrera Vegas</h1>
+  <p><strong>Economics & Data Science Student | Vanderbilt University</strong></p>
+</header>
+
+<nav>
+  <div class="nav-container">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a bilingual student passionate about finance, data science, and innovation. With a strong academic background from Greengates School and hands-on experience through internships and leadership roles, I strive to bridge the gap between technology and economic impact. Currently pursuing my Bachelor's at Vanderbilt University, I'm focused on solving real-world problems through data-driven insights and collaborative leadership.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+      <strong>Walmart de México y Centroamérica – Student Intern</strong><br>
+      <em>Jul 2024 · Mexico City</em>
+      <ul>
+        <li>Designed a comprehensive Employee Value Proposition (EVP) strategy for office staff.</li>
+        <li>Analyzed associate feedback to enhance talent attraction & retention.</li>
+        <li>Supported Walmart’s employer brand, ranked #19 in Mexico for employability.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <strong>Greengates School AI Club – Co-Founder</strong><br>
+      <em>Sep–Dec 2024</em>
+      <ul>
+        <li>Founded and led a school-wide AI club with workshops, speakers, and MIT challenge teams.</li>
+        <li>Promoted cross-disciplinary discussion of AI trends and ethics.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <strong>Volunteer – Seeway Tanzania</strong><br>
+      <em>Mar 2024</em>
+      <ul>
+        <li>Built a school, goat-shed, and installed solar panels in a rural community.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <strong>Volunteer – Ejército de Salvación México</strong><br>
+      <em>Sep 2024 – Feb 2025</em>
+      <ul>
+        <li>Led a school-wide donation initiative, collecting books and educational materials for underprivileged children.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <strong>Vanderbilt University</strong><br>
+      <em>Bachelor’s in Economics & Data Science (Class of 2029)</em>
+    </div>
+    <div class="card">
+      <strong>Greengates School Mexico</strong><br>
+      <em>International Baccalaureate (IB) Diploma – 41 Points</em>
+      <ul>
+        <li><strong>HL:</strong> English A (6), Economics (7), Chemistry (7)</li>
+        <li><strong>SL:</strong> Spanish A (6), Math AA (6), Physics (7)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li><strong>Bank of America</strong> – Investment Banking Job Simulation (2025)</li>
+      <li><strong>Standard Bank</strong> – Behavioural Economics Simulation (2025)</li>
+      <li><strong>JPMorgan Chase</strong> – Investment Banking Simulation (2024)</li>
+      <li><strong>Goldman Sachs</strong> – Excel Skills for Business (2024)</li>
+      <li><strong>Citi</strong> – Investment Banking Job Simulation (2024)</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <p><a class="btn" href="resume.pdf" download>Download Resume (PDF)</a></p>
+    <p>Interested in learning more or collaborating? Reach out!</p>
+    <a class="btn" href="mailto:your.email@example.com">Email Me</a><br><br>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/marcos-herrera-vegas-75b17431a" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <p>📍 Based in Nashville, Tennessee | Fluent in English & Spanish</p>
+  </section>
+</main>
+
+<footer>
+  © 2025 Marcos Herrera Vegas. All rights reserved.
+</footer>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle("visible", entry.isIntersecting);
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll("section").forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
